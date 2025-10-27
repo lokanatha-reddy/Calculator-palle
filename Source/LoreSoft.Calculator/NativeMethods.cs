@@ -14,6 +14,7 @@ namespace LoreSoft.Calculator
         {
             get
             {
+                // this comment added by lokanatha
                 byte[] keyState = new byte[255];
                 bool result = GetKeyboardState(keyState);
                 return (result && keyState[(int)Keys.NumLock] == 1);
